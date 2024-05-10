@@ -1,0 +1,41 @@
+
+/* Este es el Menu */
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+.menu { 
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    width: 5%;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo {
+    flex-grow: 3;
+}
+
+.logo img {
+    width: 10%;
+            /*Arriba Derecha Abajo Izquierda*/
+            /*Top Right Bottom Left*/
+    padding: 1% 2% 1% 5%;
+}
+
+.menu a:hover:not(.logoa) {
+    background-color: white;
+    color: black;
+    border: 5px white solid;
+    border-radius: 5px;
+}

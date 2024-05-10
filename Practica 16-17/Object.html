@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Producto</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <style>
+        /* Estilos para centrar el título */
+        .title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor Padre -->
+    <div class="container mt-5 border border-danger">
+        <!-- Título centrado -->
+        <h1 class="title">Solicitud de Producto</h1>
+
+        <!-- Solicitar Datos -->
+        <section class="border mt-2 mb-2">
+            <form>
+                <div class="row mt-2 mb-2 ms-2 me-2">
+                    <div class="col-3">
+                        <input type="text" class="form-control" 
+                            placeholder="Escriba Nombre del Producto"
+                            name="NombreProducto" id="NombreProducto">
+                    </div>
+                    <div class="col-3">
+                        <input type="number" class="form-control" 
+                            placeholder="Escriba el Costo del Producto"
+                            name="Costo" id="Costo">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" 
+                            placeholder="Escriba la Observación del Producto"
+                            name="Observacion" id="Observacion">
+                    </div>
+                    <div class="col-3">
+                        <input type="button" class="btn btn-success" value="Enviar Datos" onclick="addItem()">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Mostrar Datos -->
+        <section class="border mt-2 mb-2">
+            <div class="mt-2 mb-2 ms-2 me-2" id="items-list">
+                No hay productos
+            </div>
+        </section>
+    </div>
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/object.js"></script>
+
+</body>
+</html>
